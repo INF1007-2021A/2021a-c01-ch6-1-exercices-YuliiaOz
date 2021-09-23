@@ -5,21 +5,30 @@
 def order(values: list = None) -> list:
     if values is None:
         # TODO: demander les valeurs ici
+        print('Entrez 10 valeurs de type entier, float ou string: ')
+        liste_de_valeurs = [(input()), (input()), (input()), (input()), (input()), (input()), (input()), (input()), (input()), (input())]
         pass
-
-    return []
+    liste_de_valeurs.sort()
+    return [liste_de_valeurs]
 
 
 def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: demander les mots ici
+        print('Entrez deux chaînes de caractères pour voir si elles sont des anagrammes: ')
         pass
 
-    return False
+    chaine1 = list(input())
+    chaine2 = list(input())
+
+    chaine1.sort()
+    chaine2.sort()
+    return (chaine1 == chaine2)
 
 
 def contains_doubles(items: list) -> bool:
-    return False
+    my_list = [3, 3, 5, 6, 1, 1]
+    return len(my_list) != len(set(my_list))
 
 
 def best_grades(student_grades: dict) -> dict:
@@ -45,14 +54,14 @@ def print_recipe(ingredients) -> None:
 
 
 def main() -> None:
-    print(f"On essaie d'ordonner les valeurs...")
-    order()
+    #print(f"On essaie d'ordonner les valeurs...")
+    #print('Voilà les valeurs ordonnées: ', order())
 
-    print(f"On vérifie les anagrammes...")
-    anagrams()
+    #print("On vérifie les anagrammes...")
+    #print("Est-ce que c'est un anagrammes?", anagrams())
 
-    my_list = [3, 3, 5, 6, 1, 1]
-    print(f"Ma liste contient-elle des doublons? {contains_doubles(my_list)}")
+    #my_list = [3, 3, 5, 6, 1, 1]
+    #print(f"Ma liste contient-elle des doublons? {contains_doubles(my_list)}")
 
     grades = {"Bob": [90, 65, 20], "Alice": [85, 75, 83]}
     best_student = best_grades(grades)
@@ -70,3 +79,5 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
+
