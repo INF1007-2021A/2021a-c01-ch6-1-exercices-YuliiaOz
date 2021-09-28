@@ -92,14 +92,14 @@ def print_recipe(ingredients) -> None:
 
 
 def main() -> None:
-    #print(f"On essaie d'ordonner les valeurs...")
-    #print('Voilà les valeurs ordonnées: ', order())
+    print(f"On essaie d'ordonner les valeurs...")
+    print('Voilà les valeurs ordonnées: ', order())
 
-    #print("On vérifie les anagrammes...")
-    #print("Est-ce que c'est un anagrammes?", anagrams())
+    print("On vérifie les anagrammes...")
+    print("Est-ce que c'est un anagrammes?", anagrams())
 
-    #my_list = [3, 3, 5, 6, 1, 1]
-    #print(f"Ma liste contient-elle des doublons? {contains_doubles(my_list)}")
+    my_list = [3, 3, 5, 6, 1, 1]
+    print(f"Ma liste contient-elle des doublons? {contains_doubles(my_list)}")
 
 
     #grades = {"Bob": [90, 65, 20], "Alice": [85, 75, 83]}
